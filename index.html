@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Chat Socket.io </title>
+        <link rel="stylesheet" href="styles/index.css">
+
+    </head>
+     
+    <body>
+        <aside>
+            <ul id="tabs">
+                <li class="active"  data-room="general"># Général</li>
+                <li data-room="FAQ"># FAQ </li>
+                <li data-room="diverses"># Diverses </li>
+            </ul>
+        </aside>
+        <main>
+            <div id="content">
+                <div id="canalMessage">     </div>
+                <div id="writing"></div>
+            </div>
+           
+            <form>
+                <input type="text" id="name" placeholder="Entrer votre nom">
+                <input type="text" id = "message" placeholder = "Votre message">
+                <button> Envoyer </button>
+            </form>
+        </main>
+        <div id="canalMessage">
+        </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/scripts.js"></script>
+
+
+    </body>
+
+</html>
